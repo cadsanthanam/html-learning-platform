@@ -1,0 +1,69 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags for Responsiveness and Character Encoding -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Platform</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Disable Right-Click Script -->
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+</head>
+<body>
+    <header>
+        <h1>HTML Learning Platform</h1>
+    </header>
+    <div id="container">
+        <!-- Sidebar for Learning -->
+        <div id="sidebar">
+            <h3>Modules</h3>
+            <ul>
+                <li onclick="showDocumentation('module1')">Module 1: Introduction to HTML</li>
+                <li onclick="showDocumentation('module2')">Module 2: Basic HTML Elements</li>
+                <li onclick="showDocumentation('module3')">Module 3: Grouping Content</li>
+                <li onclick="showDocumentation('module4')">Module 4: Lists</li>
+                <li onclick="showDocumentation('module5')">Module 5: Links and Images</li>
+                <li onclick="showDocumentation('module6')">Module 6: Tables</li>
+                <li onclick="showDocumentation('module7')">Module 7: Forms</li>
+                <li onclick="showDocumentation('module8')">Module 8: Multimedia Elements</li>
+                <li onclick="showDocumentation('module9')">Module 9: Advanced HTML Elements</li>
+                <li onclick="showDocumentation('module10')">Module 10: HTML5 New Features</li>
+                <li onclick="showDocumentation('module11')">Module 11: Best Practices and Accessibility</li>
+                <li onclick="showDocumentation('module12')">Module 12: Building a Project</li>
+                <li onclick="showDocumentation('glossary')">Glossary</li>
+            </ul>
+            <div id="theme-selector">
+                <h3>Choose Theme</h3>
+                <button onclick="setTheme('light')">Light Theme</button>
+                <button onclick="setTheme('dark')">Dark Theme</button>
+                <button onclick="setTheme('colorful')">Colorful Theme</button>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div id="main-content">
+            <!-- Editor -->
+            <div id="editor-container">
+                <textarea id="htmlCode" placeholder="Write your HTML code here..."></textarea>
+                <button id="runButton">Run Code</button>
+            </div>
+
+            <!-- Documentation -->
+            <div id="doc-container">
+                <h2>Welcome to the HTML Learning Platform</h2>
+                <p>Select a module from the left to get started.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include External JavaScript -->
+    <script src="script.js"></script>
+    <footer>
+        &copy; 2023 Santhanam
+    </footer>
+</body>
+</html>
